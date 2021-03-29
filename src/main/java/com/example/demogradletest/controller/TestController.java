@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class TestController {
     @Autowired
             private MyModel model;
-    @RequestMapping (value = "/sayHello", method = RequestMethod.GET)
+    @RequestMapping (value = "/somethingChanged", method = RequestMethod.GET)
             public String sayHello(){
-            model.setName("hello world");
+            model.setName("chel ya dobavil lobok");
             return model.toString();
         }
 }
